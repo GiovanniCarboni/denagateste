@@ -91,3 +91,9 @@ body {
     font-size: config.$font-size-xs;
   }
 }
+
+// footer
+.footer {
+  font-size: config.$font-size-xs;
+  line-height: config.$line-height-m;
+}

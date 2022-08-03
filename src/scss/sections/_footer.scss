@@ -3,15 +3,8 @@
 .footer {
   @include config.flex($gap: config.$gap-xl);
   padding: config.$padding-m4;
-  font-size: config.$font-size-xs;
-  line-height: config.$line-height-m;
   a {
     display: block;
     text-align: center;
   }
-
-  // .social {
-  //   padding-left: config.$padding-s3;
-  //   padding-top: config.$padding-s2;
-  // }
 }

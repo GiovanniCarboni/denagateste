@@ -75,3 +75,19 @@ body {
   font-size: config.$font-size-xs;
   line-height: config.$line-height-s;
 }
+
+// section vegetarian
+.section-vegetarian {
+  .heading-secondary {
+    text-align: center;
+  }
+}
+
+// section recipe
+.recipe {
+  font-size: config.$font-size-xs;
+  line-height: config.$line-height-l;
+  .list-item {
+    font-size: config.$font-size-xs;
+  }
+}

@@ -1,0 +1,21 @@
+@use "../config";
+
+.section-gallery {
+  padding: config.$padding-l4 config.$padding-s3;
+  .heading-secondary {
+    margin-bottom: config.$margin-ml;
+  }
+  .gallery-container {
+    @include config.grid($gap: config.$gap-ms, $columns: repeat(6, 1fr));
+    .gallery-img-container {
+      overflow: hidden;
+      .gallery-img {
+        width: 100%;
+        transition: all config.$transition-l;
+      }
+      .gallery-img:hover {
+        transform: scale(105%);
+      }
+    }
+  }
+}

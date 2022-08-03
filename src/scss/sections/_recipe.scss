@@ -1,0 +1,43 @@
+@use "../config";
+
+.section-recipe {
+  padding: config.$padding-l4 0;
+  background-color: config.$primaryShadeTwo;
+  .container > .heading-secondary {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: config.$margin-ml;
+  }
+}
+.recipe {
+  @include config.grid($gap: config.$gap-ms, $columns: 1.5fr 2fr);
+  max-width: 780px;
+  margin: config.$margin-center-el;
+  background-color: #fff;
+  padding: config.$padding-m4;
+  border-radius: config.$border-radius-l;
+  box-shadow: 0.5rem 0.5rem 5px config.$shadow;
+  transition: config.$transition-m;
+  .recipe-heading {
+    grid-column: span 2;
+    justify-self: center;
+  }
+  .recipe-img-container {
+    align-self: center;
+    .recipe-img {
+      width: 100%;
+      border-radius: config.$border-radius-l;
+    }
+  }
+  .preparation-container {
+    grid-column: span 2;
+  }
+  .recipe-preparation {
+    font-style: italic;
+  }
+}
+.recipe:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.8rem 1.3rem 5px config.$shadow;
+}

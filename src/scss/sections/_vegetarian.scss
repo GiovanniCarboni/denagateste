@@ -1,0 +1,39 @@
+@use "../config";
+
+.section-vegetarian {
+  background-color: config.$primaryShadeTwo;
+  padding: config.$padding-l4 0;
+  .heading-secondary {
+    margin-bottom: config.$margin-ml;
+  }
+
+  .cards-container {
+    @include config.flex(
+      $gap: config.$gap-l,
+      $centerY: false,
+      $justify: center
+    );
+  }
+
+  .card {
+    width: fit-content;
+    border-radius: config.$border-radius-l;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0.2rem 0.6rem 9px config.$shadow;
+    transition: all config.$transition-m;
+    .card-img {
+      width: 100%;
+    }
+    .card-description-container {
+      padding: config.$padding-s4;
+      .heading-tertiary {
+        margin-bottom: config.$margin-xs;
+      }
+    }
+  }
+  .card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0.35rem 1.1rem 6px config.$shadow;
+  }
+}

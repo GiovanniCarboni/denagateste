@@ -1,0 +1,12 @@
+@use "../config";
+
+.header {
+  @include config.flex($justify: space-between);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  border-bottom: 2px solid config.$primaryTintTwo;
+  background-color: config.$primaryColor;
+  padding: config.$padding-s2 config.$padding-s4;
+}

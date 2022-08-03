@@ -1,5 +1,10 @@
-@use "config";
+// generals
+@use "config"; // variables and mixins
 @use "typography";
 @use "general";
 
+// components
 @use "components/buttons";
+
+// sections
+@use "sections/header";

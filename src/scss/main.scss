@@ -1,3 +1,5 @@
-h1 {
-  color: red;
-}
+@use "config";
+@use "typography";
+@use "general";
+
+@use "components/buttons";

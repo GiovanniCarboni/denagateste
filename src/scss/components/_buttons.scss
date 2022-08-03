@@ -1,0 +1,21 @@
+@use "../config";
+
+.btn {
+  @include config.flex($gap: 0.8rem);
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  padding: config.$padding-s2 config.$padding-s4;
+  border-radius: config.$border-radius-s;
+  transition: all config.$transition-s;
+}
+.btn-light {
+  background-color: #f9eac8;
+}
+.btn-dark {
+  background-color: config.$primaryShadeOne;
+}
+.btn:hover,
+.btn:active {
+  background-color: config.$secondaryColor;
+}

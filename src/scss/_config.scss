@@ -1,0 +1,124 @@
+//////////////////////////////////////////////////////
+// FLEX & GRID
+//////////////////////////////////////////////////////
+/* gaps */
+$gap-xl: 5rem;
+$gap-l: 3rem;
+$gap-m: 2rem;
+$gap-ms: 1.5rem;
+$gap-s: 1rem;
+$gap-xs: 0.8rem;
+
+@mixin grid($gap: 0, $columns, $centerX: false, $centerY: false) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+
+  @if $centerX {
+    justify-items: center;
+  }
+  @if $centerY {
+    align-items: center;
+  }
+}
+
+@mixin flex($gap: 0, $centerY: true, $justify: false) {
+  display: flex;
+  gap: $gap;
+
+  @if $centerY {
+    align-items: center;
+  }
+
+  @if $justify == space-between {
+    justify-content: space-between;
+  }
+  @if $justify == center {
+    justify-content: center;
+  }
+}
+
+//////////////////////////////////////////////////////
+// TYPOGRAPHY
+//////////////////////////////////////////////////////
+$font-family: "Rubik", sans-serif;
+
+/* letter spacing */
+$letter-spacing-l: 2px;
+$letter-spacing-s: 1.2px;
+
+/* font-size */
+$font-size-xxl: 4.8rem;
+$font-size-xl: 3.8rem;
+$font-size-l: 3.6rem;
+$font-size-ml: 3.2rem;
+$font-size-ms: 2.6rem;
+$font-size-s: 2.2rem;
+$font-size-xs: 1.8rem;
+$font-size-xxs: 1.6rem;
+
+/* line-height */
+$line-height-l: 1.7;
+$line-height-m: 1.5;
+$line-height-s: 1.2;
+
+/* font-weight */
+$font-weight-thick: 600;
+$font-weight-light: 500;
+
+//////////////////////////////////////////////////////
+// DIMENTIONS
+//////////////////////////////////////////////////////
+/* border-radius */
+$border-radius-circle: 50%;
+$border-radius-l: 7px;
+$border-radius-s: 3px;
+
+/* margins */
+$margin-xxl: 16rem;
+$margin-xl: 8rem;
+$margin-l: 6.6rem;
+$margin-ml: 4.8rem;
+$margin-ms: 3.2rem;
+$margin-s: 2.2rem;
+$margin-xs: 1.2rem;
+$margin-center-el: 0 auto;
+
+/* padding */
+$padding-l5: 16rem;
+$padding-l4: 12rem;
+$padding-l3: 10rem;
+$padding-l2: 8rem;
+$padding-l: 6rem;
+$padding-m4: 4.8rem;
+$padding-m3: 3.2rem;
+$padding-m2: 3rem;
+$padding-m: 2rem;
+$padding-s4: 1.8rem;
+$padding-s3: 1.5rem;
+$padding-s2: 0.8rem;
+$padding-s: 0.5rem;
+
+/* transitions */
+$transition-l: 0.8s;
+$transition-m: 0.5s;
+$transition-s: 0.3s;
+
+//////////////////////////////////////////////////////
+// COLORS
+//////////////////////////////////////////////////////
+
+$primaryColor: #ecba46;
+$primaryShadeOne: #f0c86c;
+$primaryShadeTwo: #fbf1da;
+// $primaryShadeThree: #f9eac8;
+
+$primaryTintOne: #d4a740;
+$primaryTintTwo: #d4a740;
+
+$secondaryColor: #5e4a1c;
+
+$shadow: #e9e8d4;
+
+$white: #fff;
+$gray: #444;

@@ -1,0 +1,63 @@
+@use "config";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: config.$font-family;
+  color: #444;
+  font-size: config.$font-size-xxs;
+}
+
+// buttons
+
+.btn {
+  text-decoration: none;
+  color: inherit;
+  font-weight: config.$font-weight-thick;
+  font-size: config.$font-size-xxs;
+}
+.btn-dark {
+  .icon {
+    color: config.$gray;
+  }
+}
+.btn:hover,
+.btn:active {
+  color: config.$white;
+  .icon {
+    color: config.$white;
+  }
+}
+
+// headings
+.heading-primary {
+  font-size: config.$font-size-xxl;
+  letter-spacing: config.$letter-spacing-s;
+}
+.heading-secondary {
+  font-size: config.$font-size-l;
+  font-weight: config.$font-weight-thick;
+}
+.heading-tertiary {
+  font-size: config.$font-size-s;
+  font-weight: config.$font-weight-thick;
+}
+
+// lists
+.list {
+  list-style: none;
+  font-size: config.$font-size-xs;
+}
+.list-item {
+  font-size: config.$font-size-s;
+  line-height: config.$line-height-m;
+}
+
+// brand
+.logo-container {
+  font-size: config.$font-size-s;
+  font-weight: config.$font-weight-thick;
+  text-transform: uppercase;
+  letter-spacing: config.$letter-spacing-l;
+}

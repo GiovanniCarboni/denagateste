@@ -1,0 +1,43 @@
+@use "../config";
+
+.section-hero {
+  background-color: config.$white;
+  margin-top: config.$margin-l;
+  position: relative;
+  .container {
+    @include config.grid($columns: 4fr 5fr, $centerY: true);
+  }
+  .hero-text {
+    padding: config.$padding-m2 config.$padding-m3 config.$padding-m2 0;
+    margin: auto;
+    h1 {
+      margin-bottom: config.$margin-s;
+    }
+    .hero-subtitle {
+      font-size: config.$font-size-s;
+      line-height: config.$line-height-m;
+      margin-bottom: config.$margin-ms;
+    }
+    .followers-container {
+      @include config.flex($gap: config.$gap-m);
+      margin-top: config.$margin-xl;
+    }
+    .follower-img {
+      width: 4rem;
+      border-radius: config.$border-radius-circle;
+      display: inline-block;
+      margin-left: -1.5rem;
+      border: 3px solid #fff;
+    }
+    .follower-img:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+  .hero-img-container {
+    padding: config.$padding-m2 0;
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
+}

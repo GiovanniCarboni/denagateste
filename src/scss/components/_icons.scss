@@ -1,0 +1,9 @@
+@use "../config";
+
+.feature-icon {
+  width: 6rem;
+  height: 6rem;
+  background-color: config.$primaryShadeTwo;
+  padding: config.$padding-s3;
+  border-radius: config.$border-radius-circle;
+}

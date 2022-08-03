@@ -1,0 +1,12 @@
+@use "../config";
+
+.features-container {
+  @include config.grid($gap: config.$gap-l, $columns: repeat(4, 1fr));
+  padding: config.$padding-s2 0 config.$padding-l5;
+}
+
+.feature {
+  .heading-tertiary {
+    margin: config.$margin-s 0 config.$margin-xs 0;
+  }
+}

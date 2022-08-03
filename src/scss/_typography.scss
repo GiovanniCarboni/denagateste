@@ -61,3 +61,17 @@ body {
   text-transform: uppercase;
   letter-spacing: config.$letter-spacing-l;
 }
+
+// section hero
+.followers-text {
+  font-size: config.$font-size-xs;
+  b {
+    color: config.$secondaryColor;
+  }
+}
+
+// section features
+.feature-text {
+  font-size: config.$font-size-xs;
+  line-height: config.$line-height-s;
+}
